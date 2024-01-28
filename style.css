@@ -1,35 +1,51 @@
 * {
   background-color: #f6f6f6;
+  box-sizing: border-box;
 }
 
 body {
   text-align: center;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 1vh;
-  font-size: 3.5vh;
+  font-size: 5vw;
+  margin-top: 5vh;
+}
+
+button,
+input {
+  font-size: 3.5vw;
+  padding: 2vh 4vw;
+  border-radius: 1vh;
 }
 
 button {
-  font-size: 3vh;
   background-color: rgb(18, 84, 123);
   color: #f6f6f6;
-  border: solid;
-  border-radius: 1vh;
-  padding: 2.1vh;
+  border: none;
+  margin-top: 5vh;
 }
 
 input {
-  font-size: 3vh;
-  padding: 2vh;
-  border-radius: 1vh;
   color: rgb(18, 84, 123);
+  border: 2px solid rgb(18, 84, 123);
+  margin-bottom: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+
+  button,
+  input {
+    font-size: 6vw;
+  }
 }
