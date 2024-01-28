@@ -19,7 +19,7 @@ h1 {
 }
 
 button {
-  font-size: 5vh;
+  font-size: 3vh;
   background-color: rgb(18, 84, 123);
   color: #f6f6f6;
   border: solid;
@@ -28,7 +28,7 @@ button {
 }
 
 input {
-  font-size: 5vh;
+  font-size: 3vh;
   padding: 2vh;
   border-radius: 1vh;
   color: rgb(18, 84, 123);
